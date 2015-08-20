@@ -25,6 +25,8 @@ import CoreGraphics
 extension CGRect {
     
     var diagonal: CGFloat {
+        // NOTE: Pythagorean theorem
+        // https://en.wikipedia.org/wiki/Pythagorean_theorem
         return sqrt(pow(width, 2) + pow(height, 2))
     }
     
