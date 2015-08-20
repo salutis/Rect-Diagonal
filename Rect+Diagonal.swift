@@ -25,14 +25,9 @@ import CoreGraphics
 extension CGRect {
     
     var diagonal: CGFloat {
-        
-        let widthSquared = width * width
-        let heightSquared = height * height
-        
-        let diagonal = sqrt(widthSquared + heightSquared)
-        
-        return diagonal
-        
+        // NOTE: Pythagorean theorem
+        // https://en.wikipedia.org/wiki/Pythagorean_theorem
+        return sqrt(pow(width, 2) + pow(height, 2))
     }
     
 }
